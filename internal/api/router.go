@@ -8,6 +8,6 @@ func SetupRouter() *gin.Engine {
 
 	// مسیر وضعیت سرویس‌ها
 	router.GET("/status", GetStatusHandler)
-
+	router.GET("/check", GetStatusHandler)
 	return router
 }
